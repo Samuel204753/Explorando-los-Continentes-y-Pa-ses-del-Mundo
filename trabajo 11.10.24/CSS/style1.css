@@ -1,0 +1,43 @@
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    max-width: 1800px; /* Aumenta el ancho máximo */
+    height: 700px; /* Aumenta la altura */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%; /* Mantiene la altura completa del carrusel */
+}
+
+.carousel-images img {
+    width: 100%;
+    padding-left: 300px;
+    height: 100%; /* Mantiene la altura completa del carrusel */
+    object-fit: cover; /* Mantiene la proporción sin distorsionar */
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 50px; /* Ajusta el padding si lo deseas */
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
